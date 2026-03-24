@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -30,7 +30,7 @@ setup(
     ],
     python_requires=">=3.8",
     install_requires=[
-        "graphene>=3.0.0",
+        "graphene==2.1.9",
         "fhir.resources>=6.0.0",
         "django>=3.2.0",
     ],
